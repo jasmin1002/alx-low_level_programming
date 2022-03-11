@@ -10,14 +10,27 @@
 int main(void)
 {
 	int n;
-	int d;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	d =  n % 10;
 
-	printf("%d", n);
+	if (n < 0)
+	{
+		printf("%d", n);
+		printf(" is negative\n");
+	}
 
-	printf("value of is %d\n", d);
+	else if (n == 0)
+	{
+		printf("%d", n);
+		printf(" is zero\n");
+	}
+
+	else if (n > 0)
+	{
+		printf("%d", n);
+		printf(" is postivie\n");
+	}
+
 	return (0);
 }
