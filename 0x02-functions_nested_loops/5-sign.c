@@ -1,6 +1,4 @@
-/** Declaring _putchar **/
-int _putchar(int);
-
+include "main.h"
 /**
  * print_sign - prints the sign of a number.
  *
