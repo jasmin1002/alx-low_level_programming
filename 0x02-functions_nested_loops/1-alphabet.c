@@ -1,3 +1,4 @@
+int _putchar(char);
 /**
  * print_alphabet - print alphabet stdout
  *
@@ -8,6 +9,7 @@
  * Return: void
  *
  */
+
 void print_alphabet(void)
 {
 	char c;
