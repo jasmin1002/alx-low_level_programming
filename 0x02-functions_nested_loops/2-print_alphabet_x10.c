@@ -1,6 +1,4 @@
-/** Reference _putchar() function **/
-int _putchar(char);
-
+#include "main.h"
 /**
  * print_alphabet_x10 - prints a-z 10times
  *
