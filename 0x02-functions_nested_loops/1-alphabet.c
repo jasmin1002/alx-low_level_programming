@@ -1,4 +1,4 @@
-int _putchar(char);
+#include "main.h"
 /**
  * print_alphabet - print alphabet stdout
  *
