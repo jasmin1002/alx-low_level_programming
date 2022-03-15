@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _islower - determines the case sensitive of given character
  *
