@@ -1,5 +1,3 @@
-/** Referenced _putchar function */
-int _putchar(char);
 /**
  * print_alphabet - print alphabet stdout
  *
