@@ -15,15 +15,11 @@ int _islower(int c)
 {
 	int ret;
 
-	if (c >= 65 && c <= 90)
-	{
-		ret = 0;
-	}
-
 	if (c >= 97 && c <= 120)
-	{
 		ret = 1;
-	}
+
+	else
+		ret = 0;
 
 	return (ret);
 }
