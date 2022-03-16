@@ -24,16 +24,16 @@ int print_last_digit(int n)
 	 */
 	ld = n % 10;
 
-	if (ld > 0)
+	if (ld < 0)
 	{
 		_putchar(ld + 48);
-		return (ld);
+		return (-ld);
 	}
 
 	/** when n < 0, get the last digit and return it **/
 	else
 	{
 		_putchar(ld + 48);
-		return(-ld);
+		return (ld);
 	}
 }
