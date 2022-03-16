@@ -13,6 +13,8 @@ void times_table(void)
 {
 	int out_c; /** out_c: out_counter loop **/
 	int in_c;  /** in_c: in_counter loop ***/
+	int tmp;
+			
 
 	out_c = 0;
 
@@ -31,29 +33,32 @@ void times_table(void)
 
 		while (in_c <= 9)
 		{
-			if (out_c * in_c <= 9)
-			{
-				_putchar('0' + (out_c * in_c));
-			}
-			else
-			{
-				_putchar('0' + (out_c * in_c) / 10);
-				_putchar('0' + (out_c * in_c) % 10);
-			}
+			tmp = out_c * in_c;
 
-			if (in_c != 9)
+			if (in_c == 0)
+			{
+				_putchar('0' + tmp);
+			}
+			
+			else if (tmp < 10 && in_c != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + tmp);
 			}
 			else
 			{
-				_putchar(36);
-				_putchar('\n');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(tmp / 10 + '0');
+				_putchar(tmp % 10 + '0');
 			}
 
 			in_c++;
 		}
+		
+		_putchar('\n');
 
 		out_c++;
 	}
