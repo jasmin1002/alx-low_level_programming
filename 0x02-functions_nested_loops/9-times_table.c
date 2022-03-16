@@ -14,22 +14,13 @@ void times_table(void)
 	int out_c; /** out_c: out_counter loop **/
 	int in_c;  /** in_c: in_counter loop ***/
 	int tmp;
-			
 
 	out_c = 0;
-
-	/**
-	 * print (or display) 10 by 10 grids. i.e
-	 * 10 rows
-	 * 10 columns
-	 *
-	 */
 
 	/** while outer loop **/
 	while (out_c <= 9)
 	{
-		/**Initialize in_c loop variable **/
-		in_c = 0;
+		in_c = 0; /** Initialize in_c loop variable **/
 
 		while (in_c <= 9)
 		{
@@ -39,7 +30,7 @@ void times_table(void)
 			{
 				_putchar('0' + tmp);
 			}
-			
+
 			else if (tmp < 10 && in_c != 0)
 			{
 				_putchar(',');
@@ -57,9 +48,7 @@ void times_table(void)
 
 			in_c++;
 		}
-		
 		_putchar('\n');
-
 		out_c++;
 	}
 }
