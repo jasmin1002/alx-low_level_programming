@@ -11,7 +11,7 @@ int _isupper(int c)
 	int ret;
 
 	/* if an input is uppercase letter, return 0 */
-	if (!(c >= 65 && c <= 90))
+	if (!((c >= 30 && c <= 64) || (c >= 91 && c <= 127)))
 		ret = 0;
 
 	/* if an input is other than uppercase letter, return 1 */
