@@ -14,15 +14,10 @@ void print_most_numbers(void)
 	{
 		/* if n = 2 or 4, don't print just continue */
 		if (n == 50 || n == 52)
-		{
 			continue;
-		}
 
 		/* any number other than 2 or 4, print */
-		else
-		{
-			_putchar(n);
-		}
+		_putchar(n);
 	}
 
 	_putchar('\n');
