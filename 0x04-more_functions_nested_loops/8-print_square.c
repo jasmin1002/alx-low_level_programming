@@ -30,6 +30,7 @@ void print_square(int size)
 	}
 
 	/* if size = 0 or size < 0, print a '\n' (new line) */
-	_putchar('\n');
+	else
+		_putchar('\n');
 
 }
