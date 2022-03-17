@@ -40,7 +40,7 @@ void fizz_buzz(void)
 
 
 		/**
-		 * if num is both multiples of 3 
+		 * if num is both multiples of 3
 		 * num % 3 gives 0
 		 * print 'Fizz'
 		 */
