@@ -17,8 +17,9 @@ void print_triangle(int size)
 		{
 			ic = size;
 
-			while (ic > 0)
+			while (ic > 0) /* Print the # character */
 			{
+				/* print # only when ic = oc or ic < oc */
 				if (ic <= oc)
 					_putchar(35);
 				else
