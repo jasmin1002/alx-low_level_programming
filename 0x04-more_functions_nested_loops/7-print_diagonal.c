@@ -16,7 +16,7 @@ void print_diagonal(int n)
 		while (cnt <= n) /* Outer loop keeps track of no.line */
 		{
 			int i = cnt;
-			
+
 			/**
 			 * Inner loop prints either "SPACE" or "\"
 			 * and or, both depending on the no.line
