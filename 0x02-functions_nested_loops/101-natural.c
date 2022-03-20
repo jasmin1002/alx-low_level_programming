@@ -1,12 +1,10 @@
 #include <stdio.h>
-#include "main.h"
+void print_sum_of_3or5(int);
 /**
  * main - entry point for program
  *
  * Return: 0 (success)
  */
-
-void print_sum_of_3or5(int);
 
 int main(void)
 {
@@ -15,6 +13,13 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_sum_of_3or5 - prints sum of multiple of 3 or 5
+ * @n: input argument to compute and print its sum of multiple of 3 or 5
+ *
+ * Return: void
+ *
+ */
 void print_sum_of_3or5(int n)
 {
 	if (n >= 3 || n >= 5)
@@ -34,6 +39,6 @@ void print_sum_of_3or5(int n)
 
 		}
 
-		printf("Sum equals %d\n", sum);
+		printf("%d\n", sum);
 	}
 }
