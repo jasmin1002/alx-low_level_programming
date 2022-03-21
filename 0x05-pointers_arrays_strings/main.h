@@ -6,3 +6,4 @@ void _puts(char *);
 int _putchar(char);
 void print_rev(char *);
 void puts2(char *);
+void puts_half(char *);
