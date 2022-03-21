@@ -8,16 +8,22 @@
  * Return: void (nothing)
  */
 void swap_int(int *a, int *b)
-{
+{	
+	/* tmp: temporary variable holds one of the values temporarily */
+	int tmp;
+
 	/**
 	 * To swap, do these steps:
 	 *
-	 * 1. *a = b;
-	 * 2. *b = a
+	 * 1. tmp = *a
 	 *
+	 * 2. *a = *b
+	 *
+	 * 3. *b = tmp
 	 */
+	
+	tmp = *a;
 
-	*a = 42;
-
-	*b = 98;
+	*a = *b;
+	*b = tmp;
 }
