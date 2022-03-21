@@ -8,7 +8,7 @@
  * Return: void (nothing)
  */
 void swap_int(int *a, int *b)
-{	
+{
 	/* tmp: temporary variable holds one of the values temporarily */
 	int tmp;
 
@@ -21,7 +21,7 @@ void swap_int(int *a, int *b)
 	 *
 	 * 3. *b = tmp
 	 */
-	
+
 	tmp = *a;
 
 	*a = *b;
