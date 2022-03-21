@@ -12,10 +12,10 @@ void print_rev(char *s)
 	char **str, *iterator;
 
 	int len;
-	
+
 	/* str - holds reference to address of the memory pointer s */
 	str = &s;
-	
+
 	len = strlen(*str);
 
 	iterator = *str;
