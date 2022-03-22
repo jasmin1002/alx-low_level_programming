@@ -22,7 +22,7 @@ void rev_string(char *s)
 	 * left and right of the array thereby making swapping of elements
 	 * for each sides easy
 	 */
-	for (i = 0; i < (len / 2); i++)
+	for (i = 0; i <= (len / 2); i++)
 	{
 		tmp = s[i];
 
