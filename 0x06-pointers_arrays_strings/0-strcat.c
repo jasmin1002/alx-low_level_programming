@@ -9,13 +9,22 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	/**
+	 * len: stores the length of a given string
+	 * i: loop counter
+	 */
 	int i, len;
 
 	i = 0;
-	len = strlen(dest);
+	len = strlen(dest); /* retrieve the length of dest's input */
 
 	while (*(src + i) != '\0')
 	{
+		/**
+		 * This *src gives src[0] value i.e char*
+		 * src + 1 gives address of the next adjacent element
+		 * *(src + 1) gives the value stores in such address
+		 */
 		dest[len + i] = *(src + i);
 
 		i++;
