@@ -11,13 +11,13 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
-
+	/* len: stores the length of given dest input */
 	int len = strlen(dest);
 
-	while (i != n)
+	/* stop iteration only if i = n and NULL Character is reached*/
+	while (i != n && *(src + i) != '\0')
 	{
-		if (i < n)
-			dest[len + i] = *(src + i);
+		dest[len + i] = *(src + i);
 
 
 		i++;
