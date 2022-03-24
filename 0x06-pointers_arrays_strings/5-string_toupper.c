@@ -21,7 +21,7 @@ char *string_toupper(char *s)
 
 		/**
 		 * If the current element is not lowercase or any
-		 * other character letters, like numbers and symbols,
+		 * character other than letters, like numbers and symbols,
 		 * then leave it the way it is.
 		 */
 
