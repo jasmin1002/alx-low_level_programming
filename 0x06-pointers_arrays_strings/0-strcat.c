@@ -25,7 +25,11 @@ char *_strcat(char *dest, char *src)
 		 * src + 1 gives address of the next adjacent element
 		 * *(src + 1) gives the value stores in such address
 		 */
-		dest[len + i] = *(src + i);
+
+
+		 dest[len + i] = *(src + i);
+
+		/* *dest++ = *(src + i);*/
 
 		i++;
 	}
