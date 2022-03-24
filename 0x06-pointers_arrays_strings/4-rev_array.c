@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 	int len = n - 1;
 
 	i = 0;
-	
+
 	/**
 	 * The explanation within the loop is for first iteration and
 	 * as such, be repeated for subsequence iterations till half
@@ -21,7 +21,8 @@ void reverse_array(int *a, int n)
 	 */
 	while (i <= n / 2)
 	{
-		/* Get and store the first element at index zero i.e a[0]
+		/**
+		 * Get and store the first element at index zero i.e a[0]
 		 * into var tmp
 		 */
 		tmp = *(a + i);
