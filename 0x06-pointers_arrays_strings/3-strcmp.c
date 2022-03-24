@@ -8,10 +8,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	/* counter loop: i */
-	int i, isbool, ret;
-
-	i = 0;
+	int i = 0;
+	int isbool = 0;	/* isbool stores difference btw strings */
 
 	/*
 	 * use a NULL terminating character as basis of comparison:
@@ -21,30 +19,25 @@ int _strcmp(char *s1, char *s2)
 	 */
 	while (*(s1 + i) != '\0' || *(s2 + i) != '\0')
 	{
-		/* bool: stores either -1, 0, or 1 */
-		isbool = *(s1 + i) - *(s2 + i);
-
-		if (isbool < 0) /* if s1 < s2 */
+		/**
+		 * if each character from each string are the same,
+		 * then keep iterating. But if you spot difference
+		 * character, record the difference into isbool and
+		 * seize or stop iteration at that point.
+		 */
+		if (*(s1 + i) != *(s2 + i))
 		{
-			ret = isbool;
-			break;
-		}
-
-		else if (isbool == 0) /* s1 == s2 */
-		{
-			ret = isbool;
-			break;
-		}
-
-		/* default: s1 > s2, (only when < 0 && == 0) not satisfied.*/
-		else if (isbool > 0)
-		{
-			ret = isbool;
+			isbool = *(s1 + i) - *(s2 + i);
 			break;
 		}
 
 		i++;
 	}
 
-	return (ret);
+	/* depending nature (i.e -ve or +ve) of value record from comparison*/
+	if (isbool < 0 || isbool > 0)
+		return (isbool);
+	/* if no difference spot throughout comparison, return 0 */
+	else
+		return (0);
 }
