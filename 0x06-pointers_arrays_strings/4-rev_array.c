@@ -19,7 +19,7 @@ void reverse_array(int *a, int n)
 	 * as such, be repeated for subsequence iterations till half
 	 * length or size of the array i.e n / 2)
 	 */
-	while (i <= n / 2)
+	while (i < n / 2)
 	{
 		/**
 		 * Get and store the first element at index zero i.e a[0]
