@@ -37,7 +37,7 @@ int _strcmp(char *s1, char *s2)
 		}
 
 		/* default: s1 > s2, (only when < 0 && == 0) not satisfied.*/
-		else
+		else if (isbool > 0)
 		{
 			ret = isbool;
 			break;
