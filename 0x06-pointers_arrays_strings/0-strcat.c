@@ -27,12 +27,14 @@ char *_strcat(char *dest, char *src)
 		 */
 
 
-		 dest[len + i] = *(src + i);
+		dest[len + i] = *(src + i);
 
 		/* *dest++ = *(src + i);*/
 
 		i++;
 	}
+
+	dest[strlen(dest) + 1] = '\0';
 
 	return (dest);
 }
