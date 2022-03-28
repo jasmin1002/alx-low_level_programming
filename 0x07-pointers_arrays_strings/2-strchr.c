@@ -17,14 +17,12 @@ char *_strchr(char *s, char c)
 		{
 			p = s;
 
-			break;
+			return p;
 		}
-
-		p = NULL;
 
 
 		s++;
 	}
 
-	return (p);
+	return (NULL);
 }
