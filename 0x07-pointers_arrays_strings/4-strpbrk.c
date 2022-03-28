@@ -8,10 +8,15 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
+	/* Search through ALL the characters in input string, s */
 	while (*s != '\0')
 	{
 		int i = 0;
 
+		/**
+		 * Return a pointer to any character occurrence in
+		 * s that exactly matches any of the character in accept
+		 */
 		while (*(accept + i) != '\0')
 		{
 			if (*s == *(accept + i))
@@ -23,5 +28,9 @@ char *_strpbrk(char *s, char *accept)
 		s++;
 	}
 
+	/**
+	 * Return NULL otherwise i.e when none of characters in s
+	 * exactly matches the one(s) in accept
+	 */
 	return ('\0');
 }
