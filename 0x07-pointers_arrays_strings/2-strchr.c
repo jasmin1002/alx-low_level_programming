@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 /**
  * _strchr - searches for a character in a string.
@@ -18,8 +19,8 @@ char *_strchr(char *s, char c)
 
 			break;
 		}
-		
-		p = '\0';
+
+		p = NULL;
 
 
 		s++;
