@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - entry of the program
  * @argc: input argument count
@@ -10,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int x, cnt = 0;
+
+	int *ptr = &cnt;
 
 	if (argc < 2 || argc > 2)
 	{
@@ -25,50 +28,9 @@ int main(int argc, char *argv[])
 
 	else
 	{
-		while (x)
-		{
-			if (x >= 25)
-			{
-				x -= 25;
+		break_down(x, ptr);
 
-				cnt++;
-				continue;
-			}
-
-			if (x >= 10)
-			{
-				x -= 10;
-
-				cnt++;
-				continue;
-			}
-
-			if (x >= 5)
-			{
-				x -= 5;
-
-				cnt++;
-				continue;
-			}
-
-			if (x >= 2)
-			{
-				x -= 2;
-
-				cnt++;
-				continue;
-			}
-
-			if (x == 1)
-			{
-				x -= 1;
-
-				cnt++;
-				continue;
-			}
-		}
-
-		printf("%d\n", cnt);
+		printf("%d\n", *ptr);
 	}
 
 	return (0);
