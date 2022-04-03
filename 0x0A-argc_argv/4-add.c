@@ -21,15 +21,14 @@ int main(int argc, char **argv)
 		{
 			x = strtol(argv[i], &endptr, 10);
 
-			if (x > 0)
-				sum += x;
-
-			else
+			if (*endptr < 48 || *endptr > 57)
 			{
 				printf("Error\n");
 
 				return (1);
 			}
+
+			sum += x;
 		}
 		printf("%d\n", sum);
 
