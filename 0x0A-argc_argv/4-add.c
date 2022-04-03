@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		{
 			x = strtol(argv[i], &endptr, 10);
 
-			if (*endptr < 48 || *endptr > 57)
+			if (*endptr < 0 || *endptr > 9)
 			{
 				printf("Error\n");
 
