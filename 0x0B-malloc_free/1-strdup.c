@@ -19,7 +19,10 @@ char *_strdup(char *str)
 	size_t size = strlen(str);
 
 	/* size is used to know exactly the amount of memory to keep */
-	char *str_arr = (char *)malloc(size * sizeof(char));
+	char *str_arr = (char *)malloc(size * sizeof(char) + 1);
+
+	if (*str == '\0')
+		return ('\0');
 
 	if (str_arr == NULL)
 		return ('\0');
@@ -33,7 +36,7 @@ char *_strdup(char *str)
 	}
 
 	/* End the copied string with NULL terminating character */
-	*(str_arr + i) = '\0';
+	/**(str_arr + i) = '\0';*/
 
 	return (str_arr);
 
