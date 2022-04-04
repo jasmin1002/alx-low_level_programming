@@ -21,8 +21,8 @@ char *_strdup(char *str)
 	/* size is used to know exactly the amount of memory to keep */
 	char *str_arr = (char *)malloc(size * sizeof(char) + 1);
 
-	if (str == NULL)
-		return ('\0');
+	if (*str)
+		return (NULL);
 
 	if (str_arr == NULL)
 		return ('\0');
