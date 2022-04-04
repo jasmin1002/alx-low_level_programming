@@ -4,5 +4,6 @@
 char *create_array(unsigned int, char);
 int _putchar(char);
 char *_strdup(char *);
+char *str_concat(char *, char *);
 
 #endif
