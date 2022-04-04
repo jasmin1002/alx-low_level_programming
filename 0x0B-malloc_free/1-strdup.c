@@ -17,26 +17,30 @@ char *_strdup(char *str)
 	 */
 	unsigned int i = 0;
 	size_t size = strlen(str);
+	char *str_arr;
 
-	/* size is used to know exactly the amount of memory to keep */
-	char *str_arr = (char *)malloc(size * sizeof(char) + 1);
-
-	if (*str)
+	if (str == NULL)
 		return (NULL);
 
-	if (str_arr == NULL)
-		return ('\0');
-
-	/* Initialize the memory space by copying the given string */
-	while (*str != '\0')
+	else
 	{
-		*(str_arr + i) = *(str++);
+		/* size is used to know exactly the amount of memory to keep */
+		str_arr = (char *)malloc(size * sizeof(char) + 1);
 
-		i++;
+		if (str_arr == NULL)
+			return ('\0');
+
+		/* Initialize the memory space by copying the given string */
+		while (*str != '\0')
+		{
+			*(str_arr + i) = *(str++);
+
+			i++;
+		}
+
+		/* End the copied string with NULL terminating character */
+		*(str_arr + i) = '\0';
 	}
-
-	/* End the copied string with NULL terminating character */
-	/**(str_arr + i) = '\0';*/
 
 	return (str_arr);
 
