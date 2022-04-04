@@ -29,7 +29,7 @@ char *create_array(unsigned int size, char c)
 		/* Initialize the array only if the memory is allocated */
 		while (cnt < size)
 		{
-			array + cnt = c;
+			*(array + cnt) = c;
 
 			cnt++;
 		}
