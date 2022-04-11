@@ -7,7 +7,8 @@
  * @age: dog's age.
  * @owner: dog's owner.
  *
- * Description: i declared a structure with mixed data types of char pointer and float
+ * Description: i declared a structure with mixed data types
+ * of char pointer and float
  */
 struct dog
 {
