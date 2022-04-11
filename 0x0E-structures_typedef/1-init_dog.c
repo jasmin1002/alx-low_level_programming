@@ -13,10 +13,13 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (name == NULL)
-		name = "";
+		name = "Doggy";
 
 	if (owner == NULL)
-		owner = "";
+		owner = "Owner";
+
+	if (d == NULL)
+		return;
 
 	d->name = name;
 	d->age = age;
