@@ -43,11 +43,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 			return (NULL);
 		}
-	}
 
-	ptrentry->name = name;
-	ptrentry->age = age;
-	ptrentry->owner = owner;
+		ptrentry->name = name;
+		ptrentry->age = age;
+		ptrentry->owner = owner;
+	}
 
 	return (ptrentry);
 }
