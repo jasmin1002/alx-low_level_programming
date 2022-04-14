@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	if (operator == NULL)
+	if (!operator)
 	{
 		printf("Error\n");
 		exit(99);
@@ -34,5 +34,3 @@ int main(int argc, char **argv)
 
 	return (0);
 }
-
-	
