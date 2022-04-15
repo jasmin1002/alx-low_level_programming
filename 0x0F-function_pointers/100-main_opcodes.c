@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <udis86.h>
 
 /**
  * main - prints the opcodes of its own main function
