@@ -49,7 +49,7 @@ list_t *add_node(list_t **head, const char *str)
  */
 int str_len(const char *str)
 {
-	int cnt = 0;
+	int i = 0;
 
 	if (str == NULL)
 		return (0);
