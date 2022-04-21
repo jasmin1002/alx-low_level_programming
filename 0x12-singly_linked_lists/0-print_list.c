@@ -6,20 +6,19 @@
  *
  * Return: the number of nodes
  */
-size_t print_list(const list_t *head)
+size_t print_list(const list_t *h)
 {
 	size_t cnt = 0;
-	/*list_t *tmp = head->next;*/
 
-	while (head)
+	while (h)
 	{
-		if (head->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)");
 
 		else
-			printf("[%d] %s\n", head->len, head->str);
+			printf("[%d] %s\n", h->len, h->str);
 
-		head = head->next;
+		h = h->next;
 		cnt++;
 	}
 
