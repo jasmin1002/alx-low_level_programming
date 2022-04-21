@@ -39,3 +39,25 @@ list_t *add_node(list_t **head, const char *str)
 
 	return (*head);
 }
+
+
+/**
+ * str_len - counts the number of character in a string
+ * @str: given string to count its character
+ *
+ * Return: the number of character in a string
+ */
+int str_len(const char *str)
+{
+	int cnt = 0;
+
+	if (str == NULL)
+		return (0);
+
+	while (*(str + i))
+	{
+		i++;
+	}
+
+	return (i);
+}
