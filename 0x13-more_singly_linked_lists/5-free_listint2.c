@@ -18,8 +18,7 @@ void free_listint2(listint_t **head)
 		new_h_node = tmp;
 	}
 
-	/*headnode->next = NULL;*/
 	free(*head);
-	(*head)->next = NULL;
 	*head = NULL;
+	printf("\n");
 }
