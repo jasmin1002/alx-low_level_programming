@@ -28,14 +28,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		found = (*head)->next;
 		free(*head);
-		*head = NULL;
-
-		if (*head == NULL)
-		{
-			*head = found;
-			success = 1;
-		}
+		*head = found;
+		success = 1;
 	}
+
 	else if (index > i && index <= count)
 	{
 		while (i < index)
