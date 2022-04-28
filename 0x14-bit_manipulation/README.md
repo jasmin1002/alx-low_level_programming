@@ -1,5 +1,6 @@
 Bit manipulation:
-is a stream of 0's and 1's representing a particular data, be it string, character, integer...etc. This project demonstrate how binary representation of a specific data is stored in computer memory. This is described with various tasks worked in this project.
+
+is a stream of 0's and 1's representing a particular data, be it string, character, integer...etc. This project demonstrates how binary representation of a specific data is stored in computer memory. This is described with various tasks worked in this project.
 
 Learning Objectives:
 - Look for the right source of information without too much help.
