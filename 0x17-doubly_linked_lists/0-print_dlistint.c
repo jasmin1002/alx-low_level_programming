@@ -8,7 +8,7 @@
   */
 size_t print_dlistint(const dlistint_t *head)
 {
-	unsigned int count = 0;
+	int count = 0;
 
 	while (head)
 	{
@@ -16,6 +16,6 @@ size_t print_dlistint(const dlistint_t *head)
 		head = head->next;
 		count += 1;
 	}
-	return count;
+	return (count);
 }
 
