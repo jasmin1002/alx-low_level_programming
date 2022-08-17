@@ -1,1 +1,4 @@
 school
+*.o
+main.o
+school.o
