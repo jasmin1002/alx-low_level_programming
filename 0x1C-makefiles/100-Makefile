@@ -12,10 +12,10 @@ all: $(OBJ)
 %.o: m.h
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) -f *~ $(NAME)
 	
 oclean:
-	$(RM) $(wildcard *.o)
+	$(RM) -f $(wildcard *.o)
 
 fclean: clean oclean
 
