@@ -1,0 +1,28 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+NAME = school
+RM = rm
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(OBJ)
+	$(CC) $(CFLAGS) $^ -o $(NAME)
+
+%.o: m.h
+
+clean:
+	# deletes all Emacs and Vim temporary files,
+	# and the executable
+	rm -f *~ $(NAME)
+	
+oclean:
+	# deletes the object files
+	rm -f $(wildcard *.o)
+
+fclean:
+	# deletes all Emacs and Vim temporary files,
+	# the executable and the object files.
+	rm -f *~ $(NAME)
+	rm -f $(wildcard *.o)
+
+re: oclean all
