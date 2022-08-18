@@ -6,7 +6,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
-all: $(OBJ) m.h
+all: $(OBJ)
 	$(CC) $^ -o $(NAME)
 
 %.o: m.h
@@ -18,7 +18,7 @@ clean:
 	
 oclean:
 	# deletes the object files
-	$(RM) -f $(wildcard *.o)
+	$(RM) -f $^
 
 fclean: clean oclean
 
