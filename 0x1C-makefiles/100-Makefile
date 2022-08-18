@@ -9,7 +9,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
 	$(CC) $^ -o $(NAME)
 
-%.o: m.h
+#%.o: m.h
 
 clean:
 	# deletes all Emacs and Vim temporary files,
