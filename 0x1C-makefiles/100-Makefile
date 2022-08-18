@@ -5,24 +5,22 @@ NAME = school
 RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+.PHONY: all clean oclean fclean re
+
 all: $(OBJ)
-	$(CC) $(CFLAGS) $^ -o $(NAME)
+	$(CC) $^ -o $(NAME)
 
 %.o: m.h
 
 clean:
 	# deletes all Emacs and Vim temporary files,
 	# and the executable
-	rm -f *~ $(NAME)
+	$(RM) -f *~ $(NAME)
 	
 oclean:
 	# deletes the object files
-	rm -f $(wildcard *.o)
+	$(RM) -f $(wildcard *.o)
 
-fclean:
-	# deletes all Emacs and Vim temporary files,
-	# the executable and the object files.
-	rm -f *~ $(NAME)
-	rm -f $(wildcard *.o)
+fclean: clean oclean
 
 re: oclean all
