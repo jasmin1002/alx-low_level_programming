@@ -12,12 +12,9 @@ all: $(OBJ)
 %.o: m.h
 
 clean:
-	# deletes all Emacs and Vim temporary files,
-	# and the executable
 	$(RM) -f *~ $(NAME)
 	
 oclean:
-	# deletes the object files
 	$(RM) -f $(wildcard *.o)
 
 fclean: clean oclean
