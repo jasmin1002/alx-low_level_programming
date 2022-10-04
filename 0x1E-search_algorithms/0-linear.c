@@ -12,6 +12,11 @@ int linear_search(int *array, size_t size, int value)
 {
 	int i = -1, j = size;
 
+	/* Check for nullity of given array */
+	if (array == NULL)
+		return (i);
+
+	/* Otherwise, find the target element */
 	while (1)
 	{
 		i += 1;
