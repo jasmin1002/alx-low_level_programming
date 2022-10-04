@@ -56,12 +56,11 @@ int binary_search(int *array, size_t size, int value)
 void print_array(int *array, int lB, int uB)
 {
 
-	for (; lB <= uB - 1; lB++)
+	for (; lB <= uB; lB++)
 	{
-		printf("%d", array[lB]);
 		if (lB != uB)
-			printf(" ,");
+			printf("%d, ", array[lB]);
+		else
+			printf("%d\n", array[lB]);
 	}
-
-	printf("\n");
 }
