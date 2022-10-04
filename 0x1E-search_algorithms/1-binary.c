@@ -10,6 +10,10 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
+	/**
+	 * lB => Lower Boundary
+	 * uB => Upper Boundary
+	 */
 	int m, found = -1, lB = 0, uB = size - 1;
 
 	while (lB <= uB)
@@ -17,8 +21,13 @@ int binary_search(int *array, size_t size, int value)
 		printf("Searching in array: ");
 		print_array(array, lB, uB);
 
+		/* Calculate the center of search space structure */
 		m = (lB + uB) / 2;
 
+		/**
+		 * Divide the search space to half chop
+		 * off space likely without target value
+		 */
 		if (array[m] < value)
 			lB = m + 1;
 		else if (array[m] > value)
@@ -37,13 +46,13 @@ int binary_search(int *array, size_t size, int value)
 /**
  * print_array - print an array
  * @array: given array to print
- * @size: length of given array
+ * @lB: lower boundary of search space
+ * @uB: upper boundary of search space
  *
  * Return: nothing
  */
 void print_array(int *array, int lB, int uB)
 {
-	/*int len = uB - lB;*/
 
 	for (; lB < uB + 1; lB++)
 	{
