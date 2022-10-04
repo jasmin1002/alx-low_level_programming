@@ -16,6 +16,11 @@ int binary_search(int *array, size_t size, int value)
 	 */
 	int m, found = -1, lB = 0, uB = size - 1;
 
+	/* Check for nullity of given array */
+	if (array == NULL)
+		return (found);
+
+	/* Otherwise, find the target element in the given search space */
 	while (lB <= uB)
 	{
 		printf("Searching in array: ");
