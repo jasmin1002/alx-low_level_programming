@@ -21,7 +21,7 @@ int binary_search(int *array, size_t size, int value)
 		return (unsuccessful);
 
 	/* Otherwise, find the target element in the given search space */
-	while (lB < uB)
+	while (lB <= uB)
 	{
 		printf("Searching in array: ");
 		print_array(array, lB, uB);
