@@ -14,11 +14,11 @@ int binary_search(int *array, size_t size, int value)
 	 * lB => Lower Boundary
 	 * uB => Upper Boundary
 	 */
-	int m, found = -1, lB = 0, uB = size - 1;
+	int m, unsuccessful = -1, lB = 0, uB = size - 1;
 
 	/* Check for nullity of given array */
 	if (array == NULL)
-		return (found);
+		return (unsuccessful);
 
 	/* Otherwise, find the target element in the given search space */
 	while (lB <= uB)
@@ -38,13 +38,10 @@ int binary_search(int *array, size_t size, int value)
 		else if (array[m] > value)
 			uB = m - 1;
 		else
-		{
-			found = m;
-			break;
-		}
+			return (m);
 	}
 
-	return (found);
+	return (unsuccessful);
 }
 
 
@@ -59,7 +56,7 @@ int binary_search(int *array, size_t size, int value)
 void print_array(int *array, int lB, int uB)
 {
 
-	for (; lB < uB + 1; lB++)
+	for (; lB <= uB; lB++)
 	{
 		printf("%d", array[lB]);
 		if (lB != uB)
