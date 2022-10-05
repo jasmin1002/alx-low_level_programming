@@ -12,7 +12,7 @@ int jump_search(int *array, size_t size, int value)
 {
 	int lB, tmp = 0, m = sqrt(size), len = size;
 
-	if (!array || !len)
+	if (!array || !size)
 		return (-1);
 
 	for (lB = 0; lB <= len; lB = MIN(lB, len))
