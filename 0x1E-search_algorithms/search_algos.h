@@ -11,6 +11,7 @@ int linear_search(int *, size_t, int);
 int binary_search(int *, size_t, int);
 void print_array(int *, int, int);
 int jump_search(int *, size_t, int);
+int interpolation_search(int *, size_t, int);
 
 
 #endif
